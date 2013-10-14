@@ -1,0 +1,77 @@
+//
+// Variables
+// --------------------------------------------------
+@import "variables.scss";
+
+
+//
+// Shapes
+// --------------------------------------------------
+@import "shape.scss";
+
+// Rectangle
+// -------------------------
+
+.shaped-rectangle {
+  @include shape-rectangle(100px, 50px);
+}
+
+// Square
+// -------------------------
+
+.shaped-square {
+  @include shape-square(50px);
+}
+
+// Circle
+// -------------------------
+
+.shaped-circle {
+  @include shape-circle(50px);
+}
+
+// Oval
+// -------------------------
+
+.shaped-oval {
+  @include shape-oval(100px, 50px);
+}
+
+// Triangle
+// -------------------------
+
+.shaped-triangle-up {
+  @include shape-triangle-up(50px);
+}
+
+.shaped-triangle-down {
+  @include shape-triangle-down(50px);
+}
+
+.shaped-triangle-left {
+  @include shape-triangle-left(50px);
+}
+
+.shaped-triangle-right {
+  @include shape-triangle-right(50px);
+}
+
+.shaped-triangle-top-left {
+  @include shape-triangle-top-left(50px);
+}
+
+.shaped-triangle-top-right {
+  @include shape-triangle-top-right(50px);
+}
+
+.shaped-triangle-bottom-left {
+  @include shape-triangle-bottom-left(50px);
+}
+
+.shaped-triangle-bottom-right {
+  @include shape-triangle-bottom-right(50px);
+}
+
+div[class^="shaped-"]:not([class^="shaped-triangle-"]) {
+  background-color: $shape-color;
+}

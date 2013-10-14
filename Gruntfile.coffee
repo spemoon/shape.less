@@ -9,13 +9,17 @@ module.exports = (grunt) ->
         files:
           'dist/shapes.css': 'less/dist.less'
 
+    sass:
+      shape:
+        files:
+          'dist/shapes.css': 'sass/dist.scss'
+
     watch:
       shape:
-        files: ['less/**/*.less']
+        files: ['sass/*.scss']
         tasks: ['build']
 
-    grunt.loadNpmTasks 'grunt-contrib-less'
+    grunt.loadNpmTasks 'grunt-contrib-sass'
     grunt.loadNpmTasks 'grunt-contrib-watch'
 
-    grunt.registerTask 'build', ['less:shape']
-    grunt.registerTask 'default', 'build'
+    grunt.registerTask 'default', 'sass'

@@ -1,0 +1,4 @@
+@mixin shape-rectangle($width, $height) {
+    width: $width;
+    height: $height;
+}

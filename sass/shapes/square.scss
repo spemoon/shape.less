@@ -1,0 +1,3 @@
+@mixin shape-square($width) {
+    @include shape-rectangle($width, $width);
+}

@@ -1,0 +1,4 @@
+@mixin shape-circle($width) {
+    @include shape-square($width);
+    border-radius: 50px;
+}
